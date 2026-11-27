@@ -136,6 +136,7 @@ p.lead { color: var(--muted); max-width: 660px; }
 @media (min-width: 860px) { .gallery-grid { grid-template-columns: 1fr 1fr 1fr; } }
 figure.shot { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
 figure.shot img { width: 100%; display: block; aspect-ratio: 16/10; object-fit: cover; background: #000; }
+figure.shot.full img { object-fit: contain; }
 figure.shot figcaption { padding: 12px 14px; font-size: .92rem; color: var(--muted); }
 figure.shot figcaption strong { color: var(--text); display: block; font-size: .98rem; }
 
