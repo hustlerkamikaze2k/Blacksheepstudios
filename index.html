@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BlackSheep Studios — Where Worlds Collide</title>
+<meta name="description" content="BlackSheep Studios — home of The Ricky Spanish Show. Real people. Real opinions. No filter.">
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --panel: #12121c;
+    --pink: #ff2e9a;
+    --blue: #00c2ff;
+    --green: #39ff14;
+    --text: #f2f2f5;
+    --muted: #a7a7b5;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* Header */
+  header {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(10,10,15,.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid #23232f;
+  }
+  .bar { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
+  .logo { font-weight: 900; letter-spacing: .04em; font-size: 1.05rem; }
+  .logo .bs { color: var(--pink); }
+  .logo .st { color: var(--blue); }
+  nav a {
+    color: var(--muted); text-decoration: none; font-size: .95rem; margin-left: 18px;
+  }
+  nav a:active, nav a:hover { color: var(--text); }
+
+  /* Hero */
+  .hero { text-align: center; padding: 64px 0 48px; }
+  .hero h1 {
+    font-size: clamp(2.4rem, 9vw, 4.2rem);
+    font-weight: 900; line-height: 1.05; letter-spacing: .01em;
+    background: linear-gradient(92deg, var(--pink), var(--blue));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .tagline { margin-top: 14px; font-size: clamp(1.05rem, 4vw, 1.35rem); color: var(--text); font-weight: 600; }
+  .sub { margin-top: 10px; color: var(--muted); max-width: 560px; margin-left: auto; margin-right: auto; }
+  .cta-row { margin-top: 28px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .btn {
+    display: inline-block; padding: 14px 26px; border-radius: 999px;
+    font-weight: 700; text-decoration: none; font-size: 1rem;
+  }
+  .btn-primary { background: linear-gradient(92deg, var(--pink), var(--blue)); color: #fff; }
+  .btn-ghost { border: 1px solid #33334a; color: var(--text); }
+
+  /* Sections */
+  section { padding: 40px 0; border-top: 1px solid #1b1b28; }
+  h2 { font-size: clamp(1.5rem, 5vw, 2rem); font-weight: 800; margin-bottom: 12px; }
+  h2 .accent { color: var(--green); }
+  p.lead { color: var(--muted); max-width: 640px; }
+  .cards { display: grid; grid-template-columns: 1fr; gap: 14px; margin-top: 20px; }
+  @media (min-width: 640px) { .cards { grid-template-columns: repeat(3, 1fr); } }
+  .card {
+    background: var(--panel); border: 1px solid #23232f; border-radius: 16px; padding: 20px;
+  }
+  .card h3 { font-size: 1.1rem; margin-bottom: 6px; }
+  .card p { color: var(--muted); font-size: .95rem; }
+  .badge {
+    display: inline-block; font-size: .72rem; font-weight: 800; letter-spacing: .08em;
+    color: #0a0a0f; background: var(--green); border-radius: 999px; padding: 3px 10px; margin-bottom: 10px;
+  }
+  .badge.blue { background: var(--blue); }
+  .badge.pink { background: var(--pink); color: #fff; }
+
+  .show-line {
+    font-weight: 900; letter-spacing: .06em; text-align: center;
+    font-size: clamp(1.1rem, 4.5vw, 1.6rem); padding: 22px 0 4px;
+  }
+  .show-line .p { color: var(--pink); } .show-line .b { color: var(--blue); } .show-line .g { color: var(--green); }
+
+  footer { border-top: 1px solid #1b1b28; padding: 28px 0 44px; color: var(--muted); font-size: .92rem; text-align: center; }
+  footer a { color: var(--blue); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <div class="logo"><span class="bs">BLACKSHEEP</span> <span class="st">STUDIOS</span></div>
+    <nav>
+      <a href="#show">Show</a>
+      <a href="#characters">Characters</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="hero">
+    <h1>BlackSheep Studios</h1>
+    <div class="tagline">Where worlds collide.</div>
+    <p class="sub">Home of <strong>The Ricky Spanish Show</strong> — a talk show from the cartoon world, hosted by Ricky Spanish himself.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#show">About the show</a>
+      <a class="btn btn-ghost" href="#contact">Get in touch</a>
+    </div>
+  </div>
+
+  <section id="show">
+    <h2>The Ricky Spanish <span class="accent">Show</span></h2>
+    <p class="lead">Real guests, real confrontations, and a host who says what nobody else in the room will say. Lie detectors, DNA tests, and the occasional chair that doesn't stay sat in. Clips and episodes are on the way.</p>
+    <div class="show-line"><span class="p">REAL PEOPLE.</span> <span class="b">REAL OPINIONS.</span> <span class="g">NO FILTER.</span></div>
+  </section>
+
+  <section id="characters">
+    <h2>Meet the <span class="accent">cast</span></h2>
+    <div class="cards">
+      <div class="card">
+        <span class="badge pink">HOST</span>
+        <h3>Ricky Spanish</h3>
+        <p>From the cartoon world, here to run the show. Confident, confrontational, and impossible to predict.</p>
+      </div>
+      <div class="card">
+        <span class="badge blue">GUEST</span>
+        <h3>Mercy Moore</h3>
+        <p>Blue-tipped pigtails, zero patience. Mercy's main stage is her own story — but she drops into Ricky's world too.</p>
+      </div>
+      <div class="card">
+        <span class="badge">GUEST</span>
+        <h3>Kiana</h3>
+        <p>Long braids and a short fuse. If there's a confrontation on stage, Kiana is probably standing up in the middle of it.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="lore">
+    <h2>The <span class="accent">lore</span></h2>
+    <p class="lead">Ricky lives in the cartoon world and would give anything to be in the real one. Somewhere in the real world is a girl who wants out of it. They were made for each other — they just want opposite things. Motion comics telling their story are coming to this site.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Get in <span class="accent">touch</span></h2>
+    <p class="lead">Questions, business, or you just want to say something? Email the studio:</p>
+    <p style="margin-top:12px;"><a class="btn btn-primary" href="mailto:Blacksheepstudios2k@gmail.com">Blacksheepstudios2k@gmail.com</a></p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">© BlackSheep Studios — Where worlds collide.</div>
+</footer>
+
+</body>
+</html>
